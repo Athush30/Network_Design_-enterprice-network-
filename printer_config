@@ -1,0 +1,38 @@
+# --------------------------------------------
+# Enterprise Network Printer IP Addressing Plan
+# Subnetting Scheme:
+#   Subnet 1: 192.168.10.0/26  -> Gateway: 192.168.10.1
+#   Subnet 2: 192.168.10.64/26 -> Gateway: 192.168.10.65
+#   Subnet 3: 192.168.10.128/26-> Gateway: 192.168.10.129
+# --------------------------------------------
+
+# -------- Subnet 1 - Network 192.168.10.0/26 --------
+# Printer connected to Switch 1 (Subnet 1)
+
+
+PRINTER1_IP=192.168.10.5
+PRINTER1_SUBNET=255.255.255.192
+PRINTER1_GATEWAY=192.168.10.1
+
+# -------- Subnet 2 - Network 192.168.10.64/26 --------
+# Printer connected to Switch 2 (Subnet 2)
+
+
+PRINTER2_IP=192.168.10.69
+PRINTER2_SUBNET=255.255.255.192
+PRINTER2_GATEWAY=192.168.10.65
+
+# -------- Subnet 3 - Network 192.168.10.128/26 --------
+# Printer connected to Switch 3 (Subnet 3)
+
+
+PRINTER3_IP=192.168.10.133
+PRINTER3_SUBNET=255.255.255.192
+PRINTER3_GATEWAY=192.168.10.129
+
+
+# Instructions:
+# For each Printer in Packet Tracer:
+#   1. Click the Printer device.
+#   2. Go to the 'Config' tab  
+#   3. Enter the corresponding IP address, subnet mask in FstEthernet0 and default gateway in Settings .
