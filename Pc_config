@@ -1,0 +1,59 @@
+#!/bin/bash
+# --------------------------------------------
+# Enterprise Network PC IP Addressing Plan
+# Subnetting Scheme:
+#   Subnet 1: 192.168.10.0/26  -> Gateway: 192.168.10.1
+#   Subnet 2: 192.168.10.64/26 -> Gateway: 192.168.10.65
+#   Subnet 3: 192.168.10.128/26-> Gateway: 192.168.10.129
+# --------------------------------------------
+
+# -------- Subnet 1 - Network 192.168.10.0/26 --------
+# PCs connected to Switch 1 (Subnet 1)
+
+
+PC1_IP=192.168.10.2
+PC1_SUBNET=255.255.255.192
+PC1_GATEWAY=192.168.10.1
+
+PC2_IP=192.168.10.3
+PC2_SUBNET=255.255.255.192
+PC2_GATEWAY=192.168.10.1
+
+PC3_IP=192.168.10.4
+PC3_SUBNET=255.255.255.192
+PC3_GATEWAY=192.168.10.1
+
+# -------- Subnet 2 - Network 192.168.10.64/26 --------
+# PCs connected to Switch 2 (Subnet 2)
+
+
+PC4_IP=192.168.10.66
+PC4_SUBNET=255.255.255.192
+PC4_GATEWAY=192.168.10.65
+
+PC5_IP=192.168.10.67
+PC5_SUBNET=255.255.255.192
+PC5_GATEWAY=192.168.10.65
+
+PC6_IP=192.168.10.68
+PC6_SUBNET=255.255.255.192
+PC6_GATEWAY=192.168.10.65
+
+# -------- Subnet 3 - Network 192.168.10.128/26 --------
+# PCs connected to Switch 3 (Subnet 3)
+
+
+PC7_IP=192.168.10.130
+PC7_SUBNET=255.255.255.192
+PC7_GATEWAY=192.168.10.129
+
+PC8_IP=192.168.10.131
+PC8_SUBNET=255.255.255.192
+PC8_GATEWAY=192.168.10.129
+
+PC9_IP=192.168.10.132
+PC9_SUBNET=255.255.255.192
+PC9_GATEWAY=192.168.10.129
+
+
+# Instructions: Manually configure these IPs in Packet Tracer PCs under Desktop > IP Configuration.
