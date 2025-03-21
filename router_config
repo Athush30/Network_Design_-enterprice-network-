@@ -1,0 +1,42 @@
+# Go into enable mode
+enable
+#or
+en
+
+# Enter global configuration mode to start configuring the router
+configure terminal
+# or
+config t
+
+# Select interface range from GigabitEthernet0/0 to GigabitEthernet0/2
+interface range gig0/0-2
+
+# Enable the interfaces (they are shutdown by default)
+no shutdown
+
+# Exit interface range configuration mode
+exit
+
+# Enter configuration for interface gigabitEthernet0/0
+interface gig0/0
+
+# Assign IP address and subnet mask to gig0/0 interface (first subnet)
+ip address 192.168.10.1 255.255.255.192
+# This sets gig0/0 as the gateway for the 192.168.10.0/26 subnet.
+
+# Enter configuration for interface gigabitEthernet0/1
+interface gig0/1
+
+# Assign IP address and subnet mask to gig0/1 interface (second subnet)
+ip address 192.168.10.65 255.255.255.192
+# This sets gig0/1 as the gateway for the 192.168.10.64/26 subnet.
+
+# Enter configuration for interface gigabitEthernet0/3
+interface gig0/3
+
+# Assign IP address and subnet mask to gig0/3 interface (third subnet)
+ip address 192.168.10.129 255.255.255.192
+# This sets gig0/3 as the gateway for the 192.168.10.128/26 subnet.
+
+# Exit interface configuration mode and return to global config mode
+exit
