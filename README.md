@@ -28,7 +28,7 @@ You can use any IPs from the valid host range of each subnet for your PCs and pr
 - **Subnet 3 (198.168.10.128/26):** Switch3 connects PCs and Printer in this range.
 
 ## 📁 Files Included
-- `packet-tracer-files/subnetting-lab.pkt` - The main Packet Tracer lab file.
+- `subnetting-lab.pkt` - The main Packet Tracer lab file.
 - `configs/` - Contains configuration files for router and switches.
 - `network-diagram/` - Contains the network diagram (optional).
 
