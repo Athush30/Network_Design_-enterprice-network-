@@ -30,7 +30,6 @@ You can use any IPs from the valid host range of each subnet for your PCs and pr
 ## 📁 Files Included
 - `subnetting-lab.pkt` - The main Packet Tracer lab file.
 - `configs/` - Contains configuration files for router and switches.
-- `network-diagram/` - Contains the network diagram (optional).
 
 ## ⚙️ How to Use
 1. Open `subnetting-lab.pkt` in Cisco Packet Tracer.
